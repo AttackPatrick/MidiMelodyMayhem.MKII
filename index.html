@@ -15,6 +15,30 @@
             <h2> Answer questions based on the song you are hearing in MIDI format</h2>
             <button id="start-button">Start Game</button>
             <p>Please wait for the songs to play</p>
+    </div>
+
+    <!-- Game box is the div where the the game takes place -->
+    <div id="game-box">
+
+        <!-- Question box is for the question prompt -->
+        <div class="question-box">
+            <h1 id="question-text">Question:</h1>
+            <img id="pauseBtn" src="./pause.svg" alt="pauseBtn">
+        </div>
+
+        <!-- The answer box is for the user to input there answer -->
+        <div class="answers-box">
+            <ul id="choices-list">
+                <li><button class="choice">Option 1</button></li>
+                <li><button class="choice">Option 2</button></li>
+                <li><button class="choice">Option 3</button></li>
+                <li><button class="choice">Option 4</button></li>
+            </ul>
+        </div>
+
+        <!-- For the score output -->
+        <p id="score">Score: 0</p>
+
         </div>
 </body>
 </html>
