@@ -14,7 +14,7 @@ const questions = [
         'Starry night'
       ],
       correctAnswer: 0,
-      song: './midi/macarena.mid'
+      song: './assets/midi/macarena.mid'
     },
   
     /* Beautiful Day */
@@ -28,7 +28,7 @@ const questions = [
         'Crazy Train'
       ],
       correctAnswer: 1,
-      song: './midi/beautifulDay.mid'
+      song: './assets/midi/beautifulDay.mid'
     },
   
     /* Yesterday*/
@@ -42,7 +42,7 @@ const questions = [
         'The Rolling Stones'
       ],
       correctAnswer: 1,
-      song: './midi/yesterday.MID'
+      song: './assets/midi/yesterday.MID'
     },
   
     /*Without Me*/
@@ -56,7 +56,7 @@ const questions = [
         '2003'
       ],
       correctAnswer: 2,
-      song: './midi/withoutMe.mid'
+      song: './assets/midi/withoutMe.mid'
     },
   
     /* Gangstas Paradise*/
@@ -70,7 +70,7 @@ const questions = [
         'Juice'
       ],
       correctAnswer: 0,
-      song: './midi/gangstasParadise.mid'
+      song: './assets/midi/gangstasParadise.mid'
     },
   
     /* Tainted Love*/
@@ -83,7 +83,7 @@ const questions = [
         '1995'
       ],
       correctAnswer: 0,
-      song: './midi/taintedLove.mid'
+      song: './assets/midi/taintedLove.mid'
     },
   
     /* Fell In Love With A Girl */
@@ -97,7 +97,7 @@ const questions = [
         'Seven Nation Army'
       ],
       correctAnswer: 2,
-      song: './midi/fellInLoveWithAGirl.mid'
+      song: './assets/midi/fellInLoveWithAGirl.mid'
     },
   
     /* Champagne Supernova */
@@ -110,7 +110,7 @@ const questions = [
         'Champagne Superova'
       ],
       correctAnswer: 3,
-      song: './midi/champagneSupernova.mid'
+      song: './assets/midi/champagneSupernova.mid'
     },
   
     /* Get Lucky */
@@ -123,7 +123,7 @@ const questions = [
         '2015'
       ],
       correctAnswer: 1,
-      song: './midi/getLucky.mid'
+      song: './assets/midi/getLucky.mid'
     },
   
     /* I Don't Wanna Miss A Thing */
@@ -137,7 +137,7 @@ const questions = [
         'Airplane'
       ],
       correctAnswer: 1,
-      song: './midi/iDontWantToMissAThing.mid'
+      song: './assets/midi/iDontWantToMissAThing.mid'
     }
   ]
 
