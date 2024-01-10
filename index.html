@@ -1,21 +1,28 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Josefin+Slab:ital,wght@1,700&family=Prompt:wght@300&family=Quattrocento+Sans&display=swap"
+        rel="stylesheet">
     <link rel="stylesheet" href="./assets/css/style.css">
     <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests">
     <title>Midi Melody Mayhem</title>
 </head>
+
 <body>
 
     <!-- Welcome section with welcome message and start button-->
     <div id="welcome-container">
-            <h1> Midi Melody Mayhem!!</h1>
-            <h2> Answer questions based on the song you are hearing in MIDI format</h2>
-            <button id="start-button">Start Game</button>
-            <p>Please wait for the songs to play</p>
+        <h1> Midi Melody Mayhem!!</h1>
+        <h2> Answer questions based on the song you are hearing in MIDI format</h2>
+        <button id="start-button">Start Game</button>
+        <p>Please wait for the songs to play</p>
     </div>
 
     <!-- Game box is the div where the the game takes place -->
@@ -40,10 +47,11 @@
         <!-- For the score output -->
         <p id="score">Score: 0</p>
 
-        </div>
+    </div>
 
-        <!-- External library that allows us to play MIDI files -->
-        <script src='http://www.midijs.net/lib/midi.js'></script>
-        <script src="./assets/js/script.js"></script>
+    <!-- External library that allows us to play MIDI files -->
+    <script src='http://www.midijs.net/lib/midi.js'></script>
+    <script src="./assets/js/script.js"></script>
 </body>
+
 </html>
