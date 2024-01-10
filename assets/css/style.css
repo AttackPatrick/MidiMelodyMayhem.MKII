@@ -91,3 +91,16 @@ body {
         display: flex;
         justify-content: center;
       }
+
+      h1,
+      h2 {
+        font-family: 'Prompt', sans-serif;
+        margin-top: 0;
+      }
+      
+      ul {
+        font-family: 'Quattrocento Sans', sans-serif;
+        list-style-type: none;
+        padding: 0;
+        width: 100%;
+      }
