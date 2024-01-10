@@ -1,5 +1,8 @@
 const startButton = document.getElementById('start-button');
 const welcomeContainer = document.getElementById('welcome-container');
+const questionTextH1 = document.getElementById('question-text');
+const answerButtons = document.getElementsByClassName('choice');
+const scoreTag = document.getElementById('score');
 
 const questions = [
 
@@ -141,8 +144,25 @@ const questions = [
     }
   ]
 
+let questionNum = 0;
+let score = 0;
+
+  function updateQuestion() {
+    // e.g questions[0]
+    const currentQuestion = questions[questionNum]
+    questionTextH1.innerText = 'Question: ' + currentQuestion.question;
+  
+  
+    for (let i = 0; i <= 3; i++) {
+      answerButtons[i].innerText = currentQuestion.options[i]
+    }
+  
+    scoreTag.innerText = 'score: '+ score;
+    
+  }
 
 startButton.addEventListener('click', (function() {
 
     welcomeContainer.style.display = 'none';
+    updateQuestion()
   }))
