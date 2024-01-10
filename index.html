@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./assets/css/style.css">
+    <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests">
     <title>Midi Melody Mayhem</title>
 </head>
 <body>
@@ -40,6 +41,9 @@
         <p id="score">Score: 0</p>
 
         </div>
+
+        <!-- External library that allows us to play MIDI files -->
+        <script src='http://www.midijs.net/lib/midi.js'></script>
         <script src="./assets/js/script.js"></script>
 </body>
 </html>

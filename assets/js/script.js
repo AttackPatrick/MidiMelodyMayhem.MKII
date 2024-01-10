@@ -165,6 +165,10 @@ function updateQuestion() {
 
     scoreTag.innerText = 'score: ' + score;
 
+    // Play current song with the MIDI player 
+
+    MIDIjs.play(currentQuestion.song);
+
 }
 
 // this event listener handles start button being clicked
