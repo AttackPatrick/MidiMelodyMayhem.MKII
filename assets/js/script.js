@@ -1,6 +1,7 @@
 const startButton = document.getElementById('start-button');
 const welcomeContainer = document.getElementById('welcome-container');
 const questionTextH1 = document.getElementById('question-text');
+const pauseBtn = document.getElementById('pauseBtn')
 const answerButtons = document.getElementsByClassName('choice');
 const scoreTag = document.getElementById('score');
 
@@ -178,3 +179,7 @@ startButton.addEventListener('click', (function () {
     welcomeContainer.style.display = 'none';
     updateQuestion()
 }))
+
+pauseBtn.addEventListener('click', function() {
+    MIDIjs.stop()
+  })
