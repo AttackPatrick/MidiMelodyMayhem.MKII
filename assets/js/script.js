@@ -159,7 +159,7 @@ let score = 0;
 function endQuiz() {
     endScreen.style.display = 'flex';
     endScore.innerText = 'Your score is ' + score + ' out of ' + questions.length
-    
+    MIDIjs.stop()
   }
 
 // This function displays the question and associated answers we are on
@@ -201,8 +201,12 @@ for (let i = 0; i <= 3; i++) {
         alert('Wrong!')
       }
       questionNum += 1
-      updateQuestion();
 
+      if (questionNum <= 9) {
+        updateQuestion();
+        } else {
+          endQuiz()
+        }
     })
   }
 
