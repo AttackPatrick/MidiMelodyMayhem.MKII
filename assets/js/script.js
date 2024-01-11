@@ -180,6 +180,22 @@ startButton.addEventListener('click', (function () {
     updateQuestion()
 }))
 
+// Iterates through all answer buttons and checks if answers are correct
+
+for (let i = 0; i <= 3; i++) {
+    answerButtons[i].addEventListener('click', function(e) {
+      if (i == questions[questionNum].correctAnswer) {
+        alert('Correct!')
+        score += 1
+      } else {
+        alert('Wrong!')
+      }
+      questionNum += 1
+      updateQuestion();
+
+    })
+  }
+
 pauseBtn.addEventListener('click', function() {
     MIDIjs.stop()
   })
