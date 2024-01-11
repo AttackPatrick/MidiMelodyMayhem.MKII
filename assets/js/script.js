@@ -4,6 +4,8 @@ const questionTextH1 = document.getElementById('question-text');
 const pauseBtn = document.getElementById('pauseBtn')
 const answerButtons = document.getElementsByClassName('choice');
 const scoreTag = document.getElementById('score');
+const endScreen = document.getElementById('end-container');
+const endScore = document.getElementById('endScore');
 
 // questions array variable contains song questions and answer
 
@@ -151,6 +153,14 @@ const questions = [
 
 let questionNum = 0;
 let score = 0;
+
+// Function that handles end screen
+
+function endQuiz() {
+    endScreen.style.display = 'flex';
+    endScore.innerText = 'Your score is ' + score + ' out of ' + questions.length
+    
+  }
 
 // This function displays the question and associated answers we are on
 
